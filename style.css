@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --accent : #beee62;
+    --primarry-1 : #0b090a;
+    --secoondary-1 : #16181a;
+
+    --primarry-2 : #242423;
+    --secoondary-2 : #333533;
+
+    --primary-3 : #202020;
+
+}
+
+*{
+  
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Hanken Grotesk";
+    font-weight: 600;
+
+    color: white;
+    overflow: hidden ;
+}
+
+.wrapper{
+    background-color: var(--secoondary-1);
+    width: 100dvw;
+    min-height: 100dvh;
+}
+
+/* .navbar{
+    padding: 0% 8% ;
+    height: 80px;
+    background-color: var(--secoondary-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.navbar-name{
+    font-size: 25px;
+    display: block;
+	float: left;
+
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+
+/* .navbar-content{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+
+
+  .header {
+	background-color: var(--primarry-1);
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	position: relative;
+	width: 100%;
+	z-index: 3;
+}
+
+.header ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	/* background-color: #fff; */
+}
+
+.header li a {
+	display: block;
+	padding: 20px 20px;
+
+    text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+    font-size: 40px;
+}
+
+/* .header li a:hover,
+.header .menu-btn:hover {
+	background-color: #f4f4f4;
+} */
+
+
+
+/* menu */
+
+.header .menu { 
+	clear: both;
+	max-height: 0;
+	transition: .5s ease-out;
+    opacity: 0;
+    transform: translateX(200px);
+    
+    
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
+}
+
+.header .menu-icon .navicon {
+	background: #ffffff;
+	display: block;
+	height: 20px;
+	position: relative;
+	transition: background .0.5s ease-out;
+	width: 18px;
+    border-radius: 50%;
+}
+
+.header .menu-icon .navicon:before{
+    	background: #ffffff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .5s ease-out;
+	width: 100%;
+}
+.header .menu-icon .navicon:after {
+	background: #ffffff;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .5s ease-out;
+	width: 100%;
+    
+}
+
+
+.header .menu-icon .navicon:before {
+	top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+	top: -5px;
+
+
+   
+}
+
+/* menu btn */
+
+.header .menu-btn {
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+	max-height: 100dvh;
+    opacity: 1;
+    transform: translateX(0);
+  
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+	transform: rotate(-45deg);
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+	transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+	top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 780px) {
+	.header li {
+		float: left;
+    
+	}
+	.header li a {
+		padding: 22px 14px;
+        font-size: 20px;
+      
+        
+	}
+	.header .menu {
+        padding: 0;
+		clear: none;
+		float: right;
+		max-height: none;
+        opacity: 1  ;
+        transform: translateX(0);
+        
+	}
+	.header .menu-icon {
+		display: none;
+	}
+}
+
+.header  .menu-a:hover{
+    background-color: var(--secoondary-1);
+    transition: 0.3s ease-in-out;
+    text-decoration-color: white;
+    color: var(--accent);   
+    
+}
+
