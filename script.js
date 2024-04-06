@@ -1,36 +1,108 @@
-// document.addEventListener("DOMContentLoaded", (event) => {
-//     gsap.registerPlugin(ScrollTrigger)
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger)
 
 
-//     const mm = gsap.matchMedia();
-//     const t1 = gsap.timeline();
-//     mm.add("(max-width: 800px)", () => {
+    const mm = gsap.matchMedia();
+    const t1 = gsap.timeline();
+    mm.add("(max-width: 800px)", () => {
 
-//         document.querySelector(".menu-btn" , addEventListener("click" , ()=>{
+    }
+    )
+
+    t1
+    .from(".intro-texts p" , {
+        opacity : 0,
+
+        x : 200,
+        stagger : 0.5
+    })
+    .to(".intro-texts p" , {
+        opacity : 1,
+
+        x : 0,
+    })
+    gsap.to(".intro-screen" , {
+        y : -1*window.innerHeight,
+        delay : 5,
+        duration : 1,
+        ease: "power4.out",
+    })
+
+    const timelineP = gsap.timeline();
+const titles = gsap.utils.toArray(".p-innerText");
+
+titles.forEach(title => {
+  const text = new SplitType(title);
+ 
+  
+
+      timelineP
+        .from(text.chars , {
+          opacity : 0,
+          y : 80,
+          rotateX : -90,
+          stagger : 0.02,
+        } , "<")
+
+        .to(text.chars , {
+          opacity : 0,
+          y : -80,
+          rotateX : 90,
+          stagger : 0.02,
+        } , "<1")
+
+    const mainTextSplit = new SplitType(".main-text");
+    gsap.to(".main-text" , {
+          delay : 6.5,
+          opacity : 1,
+          // y : -80,
+        
+          stagger : 0.5,
+        } , "<1")
+
+    const t2 = gsap.timeline();
+    t2.from(".char" , {
+      delay : 6,
+      opacity : 0,
+      y : 100,
+      stagger : 0.02,
+    })
+    .to(".char" , {
+    
+      opacity: 1, 
+      y : 0,
+    })
+    .to(".char" , {
+      scale : 1.05,
+      delay : 1,
+    })
+
+  
+  
+  
+})
+
+
+    
     
 
-//             t1.from(".menu-a" , {
-//                 x : 200,             
-//                 stagger : 0.2,
-//                 // duration : .5,
-//             })
-//             .to(".menu-a" , {
-//                 x : 0,
-//             })
-    
-//         }))
-      
-
-
-//     }
-//     )
     
  
 
 
-//    });
+   });
 
 
-//    function runGsap (){
+const lenis = new Lenis()
 
-//    }
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
