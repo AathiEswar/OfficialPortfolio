@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         x : 0,
     })
     gsap.to(".intro-screen" , {
-        y : -1*window.innerHeight,
+        y : -1*window.innerHeight-100,
         delay : 5,
         duration : 1,
         ease: "power4.out",
