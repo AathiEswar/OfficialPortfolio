@@ -276,7 +276,7 @@ a{
     text-align: center;
     color: var(--secoondary-2);
     margin: 0;
-    line-height: 0;
+    line-height: 3rem;
     font-family: "Bebas Neue";
     
    
