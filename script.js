@@ -89,11 +89,6 @@ titles.forEach(title => {
 
     
  
-
-
-   });
-
-
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -106,3 +101,7 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+   });
+
+
