@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     gsap.to(".intro-screen" , {
         y : -1*window.innerHeight-400,
-        delay : 5,
+        delay : 4,
         duration : 1.5,
-        ease: "power4.out",
+        ease: "power3.inOut",
     })
 
     const timelineP = gsap.timeline();
