@@ -46,7 +46,7 @@ titles.forEach(title => {
         } , "<")
 
         .to(text.chars , {
-          opacity : 0,
+          opacity : 1,
           y : -80,
           rotateX : 90,
           stagger : 0.02,
@@ -74,6 +74,7 @@ titles.forEach(title => {
       y : 0,
     })
     .to(".char" , {
+      opacity : 1,
       scale : 1.05,
       delay : 1,
     })

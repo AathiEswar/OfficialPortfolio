@@ -246,7 +246,7 @@ a{
 	z-index: 1000;
 	height: 100vh;
 	width: 100dvw;
-	background-color: var(--accent);
+	background: linear-gradient(to bottom , var(--primarry-1) , var(--secoondary-2));
 }
 
 .intro-texts{
@@ -260,7 +260,7 @@ a{
 }
 
 .intro-texts p{
-	color: var(--primarry-1);
+	color: white;
 	font-size: 9.5vw;
 	font-weight: 900;
 	font-style: italic;
@@ -271,10 +271,11 @@ a{
   }
 
   .p-innerText{
+
 	text-transform: uppercase;
     font-size: 8rem;
     text-align: center;
-    color: var(--secoondary-2);
+    color: var(--accent);
     margin: 0;
     line-height: 3rem;
     font-family: "Bebas Neue";
@@ -285,7 +286,7 @@ a{
 }
 
 .container-innerText{
-    background-color: var(--accent);
+	background: linear-gradient(to bottom , var(--primarry-1) , var(--secoondary-2));
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -420,12 +421,6 @@ a{
 }
 
 
-
-
-.about-me{
-	width: 100%;
-	height: 100dvh;
-}
 
 
 /* .animated-container::before {
