@@ -31,10 +31,9 @@
 
 
 .about-me{
-    padding-top: 1%;
-    padding-left: 1%;
+
     width: 100%;
-	min-height: 100dvh;
+	height: 100dvh;
     background : linear-gradient(to bottom , rgb(43, 43, 43) ,var(--primarry-1) );
     display: flex;
     justify-content: start;
@@ -65,6 +64,25 @@
     align-items: center;
 }
 
+.am-heading1:hover + .am-content1{
+  display: block;
+  background-color: black;
+
+}
+.am-content1{
+  
+  height: 400px;
+  width: 300px;
+  background-color: var(--accent);
+}
+.about-me-socials{
+  height: 100dvh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
 .main {
     scale: 1.5;
     display: flex;
@@ -190,4 +208,113 @@
   
   .card4:hover .discord {
     fill: white;
+  } */
+
+
+.about-me-text{
+  margin-top: 25px;
+  margin-left: 2%;
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: start;
+text-align: start;
+}
+ .am-ques{
+  color: var(--accent);
+  font-style: italic;
+  font-size: 30px;
+ }
+
+ .am-ans{
+  /* color: var(--secoondary-2); */
+  color: rgb(207, 207, 207);
+  font-size: 50px;  
+
+ }
+
+   
+
+ .about-me-2{
+
+  width: 100%;
+min-height: 100dvh;
+background-color: var(--primarry-1);
+/* background : linear-gradient(to bottom ,var(--primarry-1), rgb(43, 43, 43) ) ; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap ;
+}
+
+.am-card1{
+  display: flex;
+  background-color: var(--primarry-1);
+  /* background : linear-gradient(to bottom , rgb(43, 43, 43),var(--primarry-1) ) ; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 60px 30px;
+  
+  width: 33.3333%;
+  height: 500px;
+ 
+  border: 1px solid var(--accent);
+
+}
+
+.am-card1:hover{
+  background-color: var(--primary-3);
+}
+
+
+.am-card1 h1{
+  color: white;
+  font-size: 48px;
+
+}
+.am-card1:hover h1{
+  color: var(--accent);
+  font-size: 48px;
+
+}
+
+
+.am-card1 p{
+  color: rgb(118, 118, 118);
+  font-size: 18px;
+
+}
+
+.am-card1:hover p{
+color: rgb(217, 217, 217);  font-size: 18px;
+
+}
+
+@media screen and (max-width: 48rem) {
+  .about-me-text{
+
+    margin-left: 2%;
+    height: 100vh;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  align-items: start;
+  text-align: start;
+
+  }
+  .am-ans{
+    /* color: var(--secoondary-2); */
+    color: rgb(207, 207, 207);
+    font-size: 30px;  
+  
+   }
+
+   .am-card1{
+    width: 100%;
+   }
+	
   }

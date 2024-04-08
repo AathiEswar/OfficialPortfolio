@@ -5,8 +5,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const mm = gsap.matchMedia();
     const t1 = gsap.timeline();
-    mm.add("(max-width: 800px)", () => {
+    mm.add("(min-width: 800px)", () => {
+      const splitType = document.querySelectorAll(".am-ans");
 
+      splitType.forEach((word , i)=>{
+          const text = new SplitType(word , {types : 'words'})
+      
+          gsap.fromTo(text.words, 
+            {
+             opacity : 0, 
+            y : 50,
+            x: 50
+            },
+            {
+                opacity : 1,
+                y:0,
+                x:0,
+                duration: 0.2,
+                stagger: 0.02,
+                scrollTrigger: {
+                    trigger: word,
+                    start: '-30% center',
+                    end: '50% center',
+                    scrub: true,
+                    // markers: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+              })
+      
+            })
     }
     )
 
@@ -79,13 +106,13 @@ titles.forEach(title => {
       delay : 1,
     })
 
+    
   
   
   
 })
 
 
-    
     
 
     
