@@ -1,14 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
+
     gsap.registerPlugin(ScrollTrigger)
 
 
     const mm = gsap.matchMedia();
     const t1 = gsap.timeline();
     mm.add("(min-width: 800px)", () => {
-      const splitType = document.querySelectorAll(".am-ans");
+      const splitType1 = document.querySelectorAll(".am-ans");
 
-      splitType.forEach((word , i)=>{
+      splitType1.forEach((word , i)=>{
           const text = new SplitType(word , {types : 'words'})
       
           gsap.fromTo(text.words, 
@@ -33,7 +34,65 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 }
               })
       
-            })
+            });
+
+
+
+            const splitType2 = document.querySelectorAll(".programings-skills h1");
+
+      splitType2.forEach((word , i)=>{
+          const text = new SplitType(word , {types : 'words'})
+      
+          gsap.fromTo(text.words, 
+            {
+             opacity : 0.1, 
+   
+            },
+            {
+                opacity : 1,
+                duration: 0.2,
+                stagger: 0.02,
+                scrollTrigger: {
+                    trigger: word,
+                    start: '-50% center',
+                    end: '50% center',
+                    scrub: true,
+                    // markers: true,
+                    toggleActions: 'play play reverse reverse'
+                }
+              })
+      
+            });
+
+            const splitType3 = document.querySelectorAll(".web-app-skills h1");
+
+            splitType3.forEach((word , i)=>{
+                const text = new SplitType(word , {types : 'words'})
+            
+                gsap.fromTo(text.words, 
+                  {
+                   opacity : 0.1, 
+             
+               
+                  },
+                  {
+                      opacity : 1,
+                      duration: 0.2,
+                      stagger: 0.02,
+                      scrollTrigger: {
+                          trigger: word,
+                          start: '-50% center',
+                          end: '160% center',
+                          scrub: true,
+                          // markers: true,
+                          toggleActions: 'play play reverse reverse'
+                      }
+                    })
+            
+                  });
+      
+
+            
     }
     )
 
@@ -115,7 +174,6 @@ titles.forEach(title => {
 
     
 
-    
  
 const lenis = new Lenis()
 

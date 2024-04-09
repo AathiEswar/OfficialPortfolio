@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,7 @@
   <title>Aathi Eswar S Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body > 
   <div class="intro-screen">
 
     <div class="container-innerText">
@@ -41,11 +42,11 @@
           <div class="navicon"></div>
         </label>
         <ul class="menu">
-          <li><a href="index.html" class="active menu-a">Home</a></li>
-          <li><a href="#" class="menu-a">About Me</a></li>
-          <li><a href="#" class="menu-a">Skills</a></li>
-          <li><a href="#" class="menu-a">Projects</a></li>
-          <li><a href="#" class="menu-a">Contact Me</a></li>
+          <li><a href="#home" class="active menu-a" onclick="smoothScroll('#home')">Home</a></li>
+          <li><a href="#about" class="menu-a" onclick="smoothScroll('#about')">About Me</a></li>
+          <li><a href="#skills" class="menu-a">Skills</a></li>
+          <li><a href="#projects" class="menu-a">Projects</a></li>
+          <li><a href="#contact" class="menu-a">Contact Me</a></li>
 
         </ul>
       </div>
@@ -60,7 +61,7 @@
 
         </section> -->
 
-    <section class="hero-page" style="position: relative;">
+    <section class="hero-page" style="position: relative;" id="home">
 
       <div class="marquee1 animated-container">
         <p class="p1">AATHI ESWAR S </p>
@@ -109,17 +110,18 @@
 
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <div class="about-me-text">
         <p class="am-ques">Who am I?</p>
         <p class="am-ans">
-          A passionate student and avid learner with a strong creative drive. I'm constantly seeking new knowledge and opportunities to grow, driven by my enthusiasm for learning.
+          A passionate student and avid learner with a strong creative drive. I'm constantly seeking new knowledge and
+          opportunities to grow, driven by my enthusiasm for learning.
         </p>
       </div>
       <div class="about-me-socials">
 
-          </div>
-      
+      </div>
+
 
       <!-- <div class="about-me-headings">
         <p class="am-heading1">I AM</p>
@@ -130,7 +132,7 @@
       <div class="about-me-content">
          -->
 
-        <!-- <div class="main">
+      <!-- <div class="main">
           <div class="up">
             <button class="card1">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero" class="instagram"><g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
@@ -161,37 +163,241 @@
           <p>01</p>
           <h1>SOLVE</h1>
           <p> I specialize in efficiently resolving challenges to ensure smooth integration of your digital solutions.
-             With a meticulous approach and a focus on optimization, I streamline the deployment process to bring your projects to life seamlessly.
-             </p>
+            With a meticulous approach and a focus on optimization, I streamline the deployment process to bring your
+            projects to life seamlessly.
+          </p>
         </div>
-  
-  
-  <div class="am-card1">
-    <p>02</p>
-    <h1>DESIGN</h1>
-    <p>I always strive to create memorable experiences that are aesthetically appealing, functional and distinctive.
-       Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to users</p>
-  </div>
-  
-  
-  
-  <div class="am-card1">
-    <p>03</p>
-    <h1>DEVELOP</h1>
-    <p>Crafting scalable websites and seamless app solutions with precision and innovation. From design integration to flawless execution, I ensure each project delivers an exceptional user experience.
-       Backed by expertise and a commitment to excellence, your digital vision is in capable hands</p>
-  </div>
+
+
+        <div class="am-card1">
+          <p>02</p>
+          <h1>DESIGN</h1>
+          <p>I always strive to create memorable experiences that are aesthetically appealing, functional and
+            distinctive.
+            Whether it's inspiring marketing websites, convincing e-commerce sites or apps that are truly beneficial to
+            users</p>
+        </div>
+
+
+
+        <div class="am-card1">
+          <p>03</p>
+          <h1>DEVELOP</h1>
+          <p>Crafting scalable websites and seamless app solutions with precision and innovation. From design
+            integration to flawless execution, I ensure each project delivers an exceptional user experience.
+            Backed by expertise and a commitment to excellence, your digital vision is in capable hands</p>
+        </div>
       </div>
 
     </section>
 
-  <section class="skills-page" >
+    <section class="skills-page" id="skills">
 
-  </section>
+      <div class="web-app-skills">
+        <h1>
+          Web, App Frameworks and Tools
+        </h1>
+
+        <div class="web-app-bar">
+          <div class="skills-container">
+            <div class="skill-box">
+              <span class="title">HTML</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per html">
+                  <span class="tooltip">75%</span>
+                </span>
+              </div>
+            </div>
+  
+            <div class="skill-box">
+              <span class="title">CSS</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per css">
+                  <span class="tooltip">85%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Java Script</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per js">
+                  <span class="tooltip">70%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">NextJS </span>
+  
+              <div class="skill-bar">
+                <span class="skill-per nextjs">
+                  <span class="tooltip">50%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="skills-container">
+            <div class="skill-box">
+              <span class="title">ReactJS</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per reactjs">
+                  <span class="tooltip">80%</span>
+                </span>
+              </div>
+            </div>
+  
+            <div class="skill-box">
+              <span class="title">NodeJS</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per nodejs">
+                  <span class="tooltip">75%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">MonogoDB</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per mongo">
+                  <span class="tooltip">60%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Flutter</span>
+  
+              <div class="skill-bar">
+                <span class="skill-per html">
+                  <span class="tooltip">70%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+    
+
+     
+
+
+    </section>
+
+    <section class="skills-page-2">
+
+      <div class="programings-skills">
+        <h1>
+          Programming Languages,IDEs and Others
+        </h1>
+        <div class="programming-bar">
+          <div class="skills-container">
+        
+        
+            <div class="skill-box">
+              <span class="title">Java</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per reactjs">
+                  <span class="tooltip">80%</span>
+                </span>
+              </div>
+            </div>
+        
+        
+            <div class="skill-box">
+              <span class="title">Python</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per nextjs">
+                  <span class="tooltip">50%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">GitHub</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per js">
+                  <span class="tooltip">70%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Vim Motions</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per vimmotions">
+                  <span class="tooltip">40%</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="skills-container">
+           
+        
+            <div class="skill-box">
+              <span class="title">Vscode</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per reactjs">
+                  <span class="tooltip">80%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">IntelliJ</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per html">
+                  <span class="tooltip">70%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">Android Studio</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per mongo">
+                  <span class="tooltip">60%</span>
+                </span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <span class="title">NeoVim</span>
+        
+              <div class="skill-bar">
+                <span class="skill-per neovim">
+                  <span class="tooltip">20%</span>
+                </span>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        
+              
+              </div>
+    </section>
 
 
   </div>
 
+  <script>
+
+function smoothScroll(target) {
+        const targetSection = document.querySelector(target);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+  </script>
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
