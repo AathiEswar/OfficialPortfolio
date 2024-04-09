@@ -172,7 +172,8 @@ a{
 }
 
 .header .menu-btn:checked ~ .menu {
-	background-color: var(--secoondary-1);
+	position: relative;
+	background: linear-gradient(to bottom , var(--primarry-1) , var(--secoondary-2));
 	max-height: 100dvh;
     opacity: 1;
     transform: translateX(0);
