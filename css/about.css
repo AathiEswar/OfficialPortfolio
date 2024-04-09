@@ -11,6 +11,8 @@
 
     --primary-3 : #131313;
 
+    --as-white :  rgb(207, 207, 207);
+
 }
 
 *{
@@ -33,7 +35,7 @@
 .about-me{
 
     width: 100%;
-	height: 100dvh;
+	max-height: 100dvh;
     background : linear-gradient(to bottom , rgb(43, 43, 43) ,var(--primarry-1) );
     display: flex;
     justify-content: start;
@@ -244,9 +246,21 @@ min-height: 100dvh;
 background-color: var(--primarry-1);
 /* background : linear-gradient(to bottom ,var(--primarry-1), rgb(43, 43, 43) ) ; */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+flex-direction: column;
+  justify-content: center;
+  align-items: start;
   flex-wrap:wrap ;
+  position: relative;
+}
+
+.am-2-card-holder{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
 }
 
 .am-card1{
@@ -275,9 +289,33 @@ background-color: var(--primarry-1);
 
 }
 .am-card1:hover h1{
-  color: var(--accent);
+  /* color: var(--accent); */
   font-size: 48px;
 
+  background: linear-gradient(
+        to right,
+        #beee62 20%,
+        #bdee628f 30%,
+        #bdee626f 70%,
+        #beee62 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 400% auto;
+    animation: textShine 2s ease-in-out infinite ;
+
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }
 
 
@@ -290,6 +328,18 @@ background-color: var(--primarry-1);
 .am-card1:hover p{
 color: rgb(217, 217, 217);  font-size: 18px;
 
+}
+
+.am-2-ques{
+  z-index: 310;
+
+  font-size: 30px;
+  color: var(--as-white);
+  top: 0;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  font-style: italic;
+  
 }
 
 @media screen and (max-width: 48rem) {
@@ -308,7 +358,7 @@ color: rgb(217, 217, 217);  font-size: 18px;
   }
   .am-ans{
     /* color: var(--secoondary-2); */
-    color: rgb(207, 207, 207);
+    color: var(--as-white);
     font-size: 30px;  
   
    }
@@ -316,5 +366,40 @@ color: rgb(217, 217, 217);  font-size: 18px;
    .am-card1{
     width: 100%;
    }
+
+   .am-card1 p{
+    color: rgb(217, 217, 217);  font-size: 18px;
+    
+    }
+
+    .am-card1 h1{
+      /* color: var(--accent); */
+      font-size: 48px;
+    
+      background: linear-gradient(
+            to right,
+            #beee62 20%,
+            #bdee628f 30%,
+            #bdee626f 70%,
+            #beee62 80%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 400% auto;
+        animation: textShine 2s ease-in-out infinite ;
+    
+    }
+    
+    @keyframes textShine {
+      0% {
+          background-position: 0% 50%;
+      }
+      100% {
+          background-position: 100% 50%;
+      }
+    }
 	
   }

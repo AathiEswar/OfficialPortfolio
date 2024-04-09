@@ -352,6 +352,7 @@ a{
     top: 65%;
     transform: translate(-50%, -50%);
     animation: scroll-left 10s linear infinite;
+	animation-delay: 4.5s;
 } 
 .marquee1 .p2 {
 	font-family: "Roboto";
@@ -368,6 +369,7 @@ a{
     top: 65%;
     transform: translate(-50%, -50%);
     animation: scroll-left 10s linear infinite;
+	animation-delay: 4.5s;
 }
 .marquee1 .p3 {
 	font-family: "Roboto";
@@ -383,6 +385,7 @@ a{
     top: 65%;
     transform: translate(-50%, -50%);
     animation: scroll-left-sub 10s linear infinite;
+	animation-delay:4.5s;
 } 
 .marquee1 .p4 {
 	font-family: "Roboto";
@@ -399,6 +402,7 @@ a{
     top: 65%;
     transform: translate(-50%, -50%);
     animation: scroll-left-sub 10s linear infinite;
+	animation-delay: 4.5s;
 }
 
 @keyframes scroll-left {

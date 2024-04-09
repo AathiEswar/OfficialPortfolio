@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           gsap.fromTo(text.words, 
             {
              opacity : 0, 
-            y : 50,
+       
             x: 50
             },
             {
