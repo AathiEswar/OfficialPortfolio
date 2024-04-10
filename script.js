@@ -180,7 +180,9 @@ document.querySelectorAll('a[href^="#"]').forEach((el) => {
     if (!id) return
     const target = document.getElementById(id)
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' })
+      target.scrollIntoView({ behavior: 'smooth' , scrollIntoView : {
+        
+      }})
     }
   })
 })

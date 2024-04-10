@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --accent: #beee62;
+  --primarry-1: #0b090a;
+  --secoondary-1: #16181a;
+
+  --primarry-2: #242423;
+  --secoondary-2: #333533;
+
+  --primary-3: #131313;
+
+  --as-white: rgb(207, 207, 207);
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Hanken Grotesk";
+  font-weight: 600;
+
+  /* color: white; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.projects {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: var(--primarry-1);
+  color: var(--as-white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.projects h1 {
+  color: var(--accent);
+  font-size: 100px;
+  border-bottom: 1px solid var(--accent);
+}
+
+.projects h2 {
+  font-size: 10vw;
+  color: var(--secoondary-2);
+  border-bottom: 2px solid var(--secoondary-2);
+}
+
+.project-wrapper {
+  padding: 2%;
+  min-height: 100dvh;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-holder {
+  position: relative;
+  width: 100%;
+  background-color: var(--secoondary-2);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border: 1px solid var(--secoondary-2);
+border-radius: 5%;
+
+}
+
+.project-holder:hover {
+    cursor: pointer;
+}
+
+.project-ss {
+
+height: 40%;
+
+aspect-ratio: 3/2;
+
+}
+.project-info {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.project-info h3 {
+  font-size: 28px;
+}
+
+.project-info p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.project1 .project-ss{
+    background-image: url("../assets/cropped-eswaste2\ \(1\).png");
+    /* background-color: var(--accent); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+
+
+.project2 .project-ss{
+    background-image: url("../assets/cropped-bam.png");
+    /* background-color: var(--accent); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+
+.project1 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/bg111.jpg");
+    /* background-color: var(--accent); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.project2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)), url("../assets/toa-heftiba-DakDfhDHMSA-unsplash.jpg");
+    /* background-color: var(--accent); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .projects h1 {
+    font-size: 40px;
+  }
+
+  .project-wrapper {
+    display: grid;
+    gap: 20px;
+    place-content: center;
+    grid-template-columns: 1fr;
+  }
+  .project-info h3 {
+    font-size: 20px;
+  }
+  
+  /* .project-holder{
+    height: 50dvh;
+
+} */
+}
