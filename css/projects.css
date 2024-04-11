@@ -80,10 +80,7 @@
 
   cursor: pointer;
 }
-.project-holder:hover  {
 
-  cursor: pointer;
-}
 
 
 .project-ss {
@@ -94,6 +91,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 .project-info {
   position: absolute;
