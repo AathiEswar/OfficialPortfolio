@@ -86,24 +86,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
       );
     });
 
-    // const parallexImage = gsap.timeline();
-    // parallexImage
-    // .from(".project-ss" , {
-    //   y:100,
-    //   scrollTrigger:{
-    //     // markers : true,
-    //     trigger : ".project-holder",
-    //     actions : "play reset play reset",
-    //     start : "top center" ,
-    //     end : "bottom center",
-    //     scrub : true,
+      // const parallexImage = gsap.timeline();
+      // parallexImage
+      // .from(".project-ss" , {
+      //   y:100,
+      //   scrollTrigger:{
+      //     // markers : true,
+      //     trigger : ".project-holder",
+      //     actions : "play reset play reset",
+      //     start : "top center" ,
+      //     end : "bottom center",
+      //     scrub : true,
 
-    //   },
+      //   },
 
-    // })
-    // to(".project-ss" , {
-    //   y : 0
-    // })
+      // })
+      // to(".project-ss" , {
+      //   y : 0
+      // })
 
 
   });
