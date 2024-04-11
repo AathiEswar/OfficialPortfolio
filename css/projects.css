@@ -70,21 +70,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-border: 1px solid var(--secoondary-2);
-border-radius: 5%;
+  border: 1px solid var(--secoondary-2);
+  border-radius: 5%;
+
+
 
 }
+.project-holder:hover{
 
-.project-holder:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
+.project-holder:hover  {
+
+  cursor: pointer;
+}
+
 
 .project-ss {
+  height: 40%;
 
-height: 40%;
+  aspect-ratio: 3/2;
 
-aspect-ratio: 3/2;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .project-info {
   position: absolute;
@@ -100,43 +109,50 @@ aspect-ratio: 3/2;
   font-weight: 200;
 }
 
-.project1 .project-ss{
-    background-image: url("../assets/cropped-eswaste2\ \(1\).png");
-    /* background-color: var(--accent); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    
+.project1 .project-ss {
+  background-image: url("../assets/cropped-eswaste2\ \(1\).png");
 }
 
-
-.project2 .project-ss{
-    background-image: url("../assets/cropped-bam.png");
-    /* background-color: var(--accent); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    
+.project2 .project-ss {
+  background-image: url("../assets/cropped-bam.png");
+}
+.project3 .project-ss {
+  background-image: url("../assets/cropped-Screenshot\ 2024-04-11\ 090625.png");
 }
 
+.project4 .project-ss {
+  background-image: url("../assets/cropped-newwithfuse.png");
+}
 .project1 {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/bg111.jpg");
-    /* background-color: var(--accent); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)),
+    url("../assets/chinigraphy-CdEhjEF1C4M-unsplash.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .project2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)), url("../assets/toa-heftiba-DakDfhDHMSA-unsplash.jpg");
-    /* background-color: var(--accent); */
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)),
+    url("../assets/toa-heftiba-DakDfhDHMSA-unsplash.jpg");
+}
+.project3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)),
+    url("../assets/shapelined-_JBKdviweXI-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.project4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.489)),
+    url("../assets/shot-by-cerqueira-kmoe5HdXqvc-unsplash.jpg");
 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 @media screen and (max-width: 768px) {
   .projects h1 {
@@ -152,7 +168,7 @@ aspect-ratio: 3/2;
   .project-info h3 {
     font-size: 20px;
   }
-  
+
   /* .project-holder{
     height: 50dvh;
 
