@@ -62,11 +62,11 @@
 }
 
 .project-wrapper {
-  padding: 2%;
+  /* padding: 2%; */
   min-height: 100dvh;
   width: 100%;
   display: grid;
-  gap: 20px;
+  gap: 10px;
   place-content: center;
   grid-template-columns: 1fr 1fr;
 }
