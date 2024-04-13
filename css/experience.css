@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --accent: #beee62;
+  --primarry-1: #0b090a;
+  --secoondary-1: #16181a;
+
+  --primarry-2: #242423;
+  --secoondary-2: #333533;
+
+  --primary-3: #131313;
+
+  --as-white: rgb(207, 207, 207);
+  --as-grey : rgb(143, 143, 143);
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Hanken Grotesk";
+  font-weight: 600;
+
+  /* color: white; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.experience-page{
+    color:var(--as-white);
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+
+}
+
+.exp-wrapper{
+    padding: 2%;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.exp-holder{
+    /* border: 1px solid var(--as-white); */
+}
+
+.holder-1{
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.holder-1 .exp-holder{
+    aspect-ratio: 1/1;
+    background-color: var(--secoondary-2);
+   
+    width: 55%;
+}
+.holder-1 .exp-holder:nth-child(2){
+    width: 40%;
+
+}
+
+.holder-2{
+    min-height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+.holder-2 .exp-holder{
+    aspect-ratio: 1/1;
+    background-color: var(--secoondary-2);
+   
+    width: 40%;
+}
+.holder-2 .exp-holder:nth-child(2){
+    aspect-ratio: 1/1;
+    width: 55%;
+
+}
+.exp-bg{
+    aspect-ratio: 1/1;
+    width: 100%;
+    background-color: var(--accent);
+    background-image: url("/assets/enfuse.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/22385771.jpg");
+    background-repeat: no-repeat;
+    background-position: center center,center , right;
+    background-size: 80% , 100%,200%;
+}
+.holder-1 .exp-holder:nth-child(1) .exp-bg{
+    background-image: url("/assets/enfuse.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-yunus-tuğ-7957992.jpg");
+
+}
+.holder-1 .exp-holder:nth-child(2) .exp-bg{
+    background-image: url("/assets/cropped-indianprincess.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-roberto-nickson-2661176.jpg");
+
+}
+.holder-2 .exp-holder:nth-child(1) .exp-bg{
+    background-image: url("/assets/cropped-HB-logo.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-alfredo-kayesse-18877738.jpg");
+
+}
+.holder-2 .exp-holder:nth-child(2) .exp-bg{
+    background-image: url("/assets/cropped-hoppymobility\ website.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/mokhalad-musavi-ilEGYgpaB1k-unsplash.jpg");
+
+}
+.exp-info{
+   
+    background-color: var(--primarry-1);
+    padding: 3% 0;
+}
+
+.exp-stack-holder{
+    display: flex;
+    color: var(--as-grey);
+    gap: 5px;
+}
+.exp-year{
+    font-size: 15px;
+    padding: 1% 4%;
+    border-radius: 25px;
+    border: 2px solid var(--secoondary-2);
+}
+.exp-stack{
+   
+    font-size: 15px;
+    padding: 1% 4%;
+    border-radius: 50px;
+    border: 2px solid var(--secoondary-2);
+}
+.exp-org{
+    margin: 1% 0;
+font-size: 30px;
+}
+.exp-role{
+    color: var(--as-grey);
+}
+
+
+
+@media screen and (max-width : 760px) {
+  
+.experience-page{
+
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+
+
+}
+
+.exp-wrapper{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.holder-1{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 40px;
+    
+}
+.holder-1 .exp-holder{
+    aspect-ratio: 1/1;
+
+   
+    width: 95%;
+
+}
+.holder-1 .exp-holder:nth-child(2){
+    width: 95%;
+
+
+}
+
+.holder-2{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 40px;
+ 
+}
+.holder-2 .exp-holder{
+    aspect-ratio: 1/1;
+
+   
+    width: 95%;
+}
+.holder-2 .exp-holder:nth-child(2){
+    aspect-ratio: 1/1;
+    width: 95%;
+
+}
+.exp-bg{
+    aspect-ratio: 1/1;
+    width: 100%;
+
+}
+/* .exp-info{
+    height: 20%;
+
+} */
+
+.exp-stack-holder{
+
+    gap: 15px;
+}
+.exp-year{
+    font-size: 10px;
+    padding: 1% 4%;
+    border-radius: 25px;
+    border: 2px solid var(--secoondary-2);
+}
+.exp-stack{
+   
+    font-size: 10px;
+    padding: 1% 4%;
+    border-radius: 50px;
+    border: 2px solid var(--secoondary-2);
+}
+.exp-org{
+    margin: 1% 0;
+font-size: 23px;
+}
+.exp-role{
+    color: var(--as-grey);
+    font-size: 15px;
+}
+    
+}
