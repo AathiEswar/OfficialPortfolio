@@ -245,7 +245,7 @@ a{
 	position: absolute;
 	z-index: 1000;
 	height: 100vh;
-	width: 100dvw;
+	width: 100vw;
 	background: linear-gradient(to bottom , var(--primarry-1) , var(--secoondary-2));
 }
 

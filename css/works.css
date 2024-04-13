@@ -69,8 +69,8 @@ padding: 2%;
 .works-bg {
   height: 100%;
   width: 100%;
-  background-position: center 30%, center, right;
-  background-size: 70%, 100%, 150%;
+  background-position: center 30%, center, center ;
+  background-size: 70%, 100%, 200%;
   background-repeat: no-repeat;
 
   display: flex;
@@ -80,26 +80,26 @@ padding: 2%;
 
 .works-holder:nth-child(1) .works-bg{
   background-image: url("/assets/enfuse.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.179)),
-    url("/assets/pexels-codioful-\(formerly-gradienta\)-7135037.jpg");
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.292), rgba(0, 0, 0, 0.423)),
+    url("/assets/969379.jpg");
 
 }
 .works-holder:nth-child(2) .works-bg{
   background-image: url("/assets/cropped-indianprincess.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.526)),
-    url("/assets/pexels-mrishmarinaalekseevna-7367190.jpg");
+    url("/assets/48874488.jpg");
     transform: translateY(-10%);
 }
 .works-holder:nth-child(3) .works-bg{
   background-image: url("/assets/cropped-hoppymobility\ website.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
-    url("/assets/pexels-loc-dang-5253574.jpg");
+    url("/assets/22385771.jpg");
 }
 
 .works-holder:nth-child(4) .works-bg{
   background-image: url("/assets/cropped-HB-logo.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
-    url("/assets/8146987.jpg");
+    url("/assets/24274105.jpg");
     transform: translateY(-10%);
 }
 
@@ -182,7 +182,7 @@ height: 10%;
 
   .works-bg {
     background-position: center 40%, center, right;
-    background-size: 80%, 100%, 150%;
+    background-size: 80%, 100%, 180%;
   }
 
   .works-holder:nth-child(2) .works-bg{
@@ -198,16 +198,20 @@ height: 10%;
 
   .works-main-heading {
     font-size: 40px;
+    font-weight: 300;
   }
   .works-heading h1 {
-    font-size: 7dvw;
+    font-size: 5dvw;
+    font-weight: 400;
   }
   .works-heading h4 {
     font-size: 3dvw;
+    font-weight: 300;
   }
 
   .work-details {
     font-size: 2vw;
+    font-weight: 100;
   }
 
   .work-name{
