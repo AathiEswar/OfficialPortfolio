@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   const lenis = new Lenis({
-    duration: 1.2,
+    duration: 2,
     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
     direction: "vertical",
     gestureDirection: "vertical",

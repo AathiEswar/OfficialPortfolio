@@ -32,9 +32,10 @@
 
 
 .wrapper{
-    background-color: var(--primary-3);
+    background-color: var(--primarry-1);
     width: 100dvw;
     min-height: 100dvh;
+	overflow-x: hidden;
 }
 
 /* .navbar{

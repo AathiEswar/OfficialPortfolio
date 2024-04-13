@@ -53,6 +53,7 @@
   color: var(--accent);
   font-size: 100px;
   border-bottom: 1px solid var(--accent);
+  margin-bottom: 2%;
 }
 
 .projects h2 {

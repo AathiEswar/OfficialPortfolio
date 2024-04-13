@@ -30,18 +30,18 @@
 }
 
 .works-page {
+  margin-top: 10%;
   width: 100%;
 min-height: 100dvh;
-  background: linear-gradient(var(--primarry-1), var(--secoondary-1));
+  background: linear-gradient( var(--primarry-1) , var(--primarry-2))  ;
   color: var(--as-white);
 
   display: flex;
   flex-direction: column;
+  
 
 }
-.works-main-heading{  
-  color: var(--accent);
-}
+
 .works-wrapper {
   width: 100%;
   display: grid;
@@ -50,13 +50,18 @@ min-height: 100dvh;
   gap: 10px;
 
 }
-
+.works-main-heading{
+  color: var(--accent);
+  font-size: 100px;
+  border-bottom: 1px solid var(--accent);
+  align-self: flex-start;
+  margin-bottom: 2%;
+}
 
 .works-holder {
   position: relative;
   width: 100%;
   height: 100%;
- 
   aspect-ratio: 1/1;
   border-radius: 2%;
   cursor: pointer;
@@ -65,7 +70,7 @@ min-height: 100dvh;
   height: 100%;
   width: 100%;
   background-position: center 30%, center, right;
-  background-size: 80%, 100%, 150%;
+  background-size: 70%, 100%, 150%;
   background-repeat: no-repeat;
 
   display: flex;
@@ -74,19 +79,27 @@ min-height: 100dvh;
 
 .works-holder:nth-child(1) .works-bg{
   background-image: url("/assets/enfuse.png"),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
-    url("/assets/cropped-oil\ \(1\).jpg");
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.179)),
+    url("/assets/pexels-codioful-\(formerly-gradienta\)-7135037.jpg");
+
 }
 .works-holder:nth-child(2) .works-bg{
-  background-image: url("/assets/indianprincess.png"),
+  background-image: url("/assets/cropped-indianprincess.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
-    url("/assets/pawel-czerwinski-009elgvBM_A-unsplash.jpg");
+    url("/assets/pexels-mrishmarinaalekseevna-7367190.jpg");
 }
 .works-holder:nth-child(3) .works-bg{
-  background-image: url("/assets/hoppymobility\ website.png"),
+  background-image: url("/assets/cropped-hoppymobility\ website.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
-    url("/assets/1845027.jpg");
+    url("/assets/pexels-loc-dang-5253574.jpg");
 }
+
+.works-holder:nth-child(4) .works-bg{
+  background-image: url("/assets/cropped-HB-logo.png"),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
+    url("/assets/8146987.jpg");
+}
+
 
 
 .works-content {
@@ -94,8 +107,8 @@ min-height: 100dvh;
   width: 100%;
 
   align-self: flex-end;
-  background-color: rgba(0, 0, 0, 0.067);
-  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(10px);
   border-radius: 2%;
 
   display: flex;
@@ -119,11 +132,14 @@ min-height: 100dvh;
 }
 .works-heading h4 {
   font-size: 1dvw;
+  font-weight: 400;
 }
 
 .work-details {
   border-top: .1px solid var(--as-white);
   font-size: 0.7dvw;
+  font-weight: 100;
+  
 }
 @media screen and (max-width: 768px) {
   .works-holder {
@@ -147,8 +163,9 @@ min-height: 100dvh;
     background-size: 90%, 100%, 150%;
   }
 
-  .works-bg:nth-child(1){
-    
+
+  .works-main-heading {
+    font-size: 40px;
   }
   .works-heading h1 {
     font-size: 7dvw;
