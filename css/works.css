@@ -35,7 +35,7 @@
 min-height: 100dvh;
   background: linear-gradient( var(--primarry-1) , var(--primarry-2))  ;
   color: var(--as-white);
-
+padding: 2%;
   display: flex;
   flex-direction: column;
   
@@ -47,7 +47,7 @@ min-height: 100dvh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
-  gap: 10px;
+  gap: 20px;
 
 }
 .works-main-heading{
@@ -87,6 +87,7 @@ min-height: 100dvh;
   background-image: url("/assets/cropped-indianprincess.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
     url("/assets/pexels-mrishmarinaalekseevna-7367190.jpg");
+    transform: translateY(-10%);
 }
 .works-holder:nth-child(3) .works-bg{
   background-image: url("/assets/cropped-hoppymobility\ website.png"),
@@ -98,6 +99,7 @@ min-height: 100dvh;
   background-image: url("/assets/cropped-HB-logo.png"),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
     url("/assets/8146987.jpg");
+    transform: translateY(-10%);
 }
 
 
@@ -129,6 +131,7 @@ min-height: 100dvh;
 
 .works-heading h1 {
   font-size: 4.5dvw;
+  height: 10%;
 }
 .works-heading h4 {
   font-size: 1dvw;
@@ -156,13 +159,34 @@ min-height: 100dvh;
   }
 
   .works-bg {
-    background-image: url("/assets/enfuse.png"),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.574), rgba(0, 0, 0, 0.503)),
-      url("/assets/cropped-oil\ \(1\).jpg");
     background-position: center 30%, center, right;
     background-size: 90%, 100%, 150%;
   }
-
+  .works-holder:nth-child(1) .works-bg{
+    background-image: url("/assets/enfuse.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.179)),
+      url("/assets/pexels-codioful-\(formerly-gradienta\)-7135037.jpg");
+  
+  }
+  .works-holder:nth-child(2) .works-bg{
+    background-image: url("/assets/cropped-indianprincess.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
+      url("/assets/pexels-mrishmarinaalekseevna-7367190.jpg");
+      transform: translateY(0);
+  }
+  .works-holder:nth-child(3) .works-bg{
+    background-image: url("/assets/cropped-hoppymobility\ website.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
+      url("/assets/pexels-loc-dang-5253574.jpg");
+  }
+  
+  .works-holder:nth-child(4) .works-bg{
+    background-image: url("/assets/cropped-HB-logo.png"),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.41)),
+      url("/assets/8146987.jpg");
+      transform: translateY(0);
+  }
+  
 
   .works-main-heading {
     font-size: 40px;
@@ -176,14 +200,5 @@ min-height: 100dvh;
 
   .work-details {
     font-size: 2vw;
-  }
-}
-
-@media screen and (min-width : 770px){
-  .works-holder:nth-child(2){
-    transform: translateY(-100px);
-  }
-  .works-holder:nth-child(4){
-    transform: translateY(-100px);
   }
 }
