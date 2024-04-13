@@ -44,6 +44,15 @@
 
 }
 
+.exp-main-heading{
+    color: var(--accent);
+    font-size: 100px;
+    border-bottom: 1px solid var(--accent);
+    align-self: flex-start;
+    margin-left: 2%;
+    
+}
+
 .exp-wrapper{
     padding: 2%;
     width: 100%;
@@ -55,10 +64,24 @@
 }
 .exp-holder{
     /* border: 1px solid var(--as-white); */
+    border-radius: 1%;
+    cursor: pointer;
+    transition: all 1s;   
+}
+.exp-holder:hover{
+    /* border: 1px solid var(--as-white); */
+    border-radius: 3%;
+
+   
+}
+
+.exp-holder:hover .exp-bg{
+    background-size: 82% , 140%,210%;
+    border-radius: 3%;
 }
 
 .holder-1{
-    min-height: 100dvh;
+   
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -73,11 +96,12 @@
 }
 .holder-1 .exp-holder:nth-child(2){
     width: 40%;
+    
 
 }
 
 .holder-2{
-    min-height: 100dvh;
+   
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -95,6 +119,7 @@
     width: 55%;
 
 }
+
 .exp-bg{
     aspect-ratio: 1/1;
     width: 100%;
@@ -103,6 +128,9 @@
     background-repeat: no-repeat;
     background-position: center center,center , right;
     background-size: 80% , 100%,200%;
+
+    border-radius: 1%;
+    transition: all 1s;
 }
 .holder-1 .exp-holder:nth-child(1) .exp-bg{
     background-image: url("/assets/enfuse.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-yunus-tuğ-7957992.jpg");
@@ -119,7 +147,10 @@
 .holder-2 .exp-holder:nth-child(2) .exp-bg{
     background-image: url("/assets/cropped-hoppymobility\ website.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/mokhalad-musavi-ilEGYgpaB1k-unsplash.jpg");
 
+    
 }
+
+
 .exp-info{
    
     background-color: var(--primarry-1);
@@ -260,5 +291,11 @@ font-size: 23px;
     color: var(--as-grey);
     font-size: 15px;
 }
+
+.exp-main-heading {
+
+    font-size: 40px;
+    font-weight: 400;
+  }
     
 }
