@@ -75,6 +75,7 @@ padding: 2%;
 
   display: flex;
   border-radius: 2%;
+  position: relative;
 }
 
 .works-holder:nth-child(1) .works-bg{
@@ -144,6 +145,27 @@ padding: 2%;
   font-weight: 100;
   
 }
+
+.work-name{
+
+  top: 1%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 100;
+  /* top: 1%;
+  left: 1%; */
+  font-size: 25px;
+width: 98%;
+height: 10%;
+  background-color: rgba(0, 0, 0, 0.219);
+  backdrop-filter: blur(10px);
+  border-radius: 5%;
+
+  display: grid;
+  place-content: center;
+}
 @media screen and (max-width: 768px) {
   .works-holder {
     position: relative;
@@ -159,8 +181,8 @@ padding: 2%;
   }
 
   .works-bg {
-    background-position: center 30%, center, right;
-    background-size: 90%, 100%, 150%;
+    background-position: center 40%, center, right;
+    background-size: 80%, 100%, 150%;
   }
   .works-holder:nth-child(1) .works-bg{
     background-image: url("/assets/enfuse.png"),
@@ -200,5 +222,9 @@ padding: 2%;
 
   .work-details {
     font-size: 2vw;
+  }
+
+  .work-name{
+    font-size: 15px;
   }
 }
