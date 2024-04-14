@@ -66,7 +66,7 @@
     /* border: 1px solid var(--as-white); */
     border-radius: 1%;
     cursor: pointer;
-    transition: all 1s;   
+    transition: all 0.7s;   
 }
 .exp-holder:hover{
     /* border: 1px solid var(--as-white); */
@@ -130,7 +130,7 @@
     background-size: 80% , 100%,200%;
 
     border-radius: 1%;
-    transition: all 1s;
+    transition: all .7s;
 }
 .holder-1 .exp-holder:nth-child(1) .exp-bg{
     background-image: url("/assets/enfuse.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-yunus-tuğ-7957992.jpg");
@@ -306,3 +306,70 @@ font-size: 23px;
   }
     
 }
+
+.intro-container {
+    background: linear-gradient(to bottom , var(--primarry-1) , var(--primarry-2));
+    color: var(--as-white);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+
+  }
+  
+  .loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--primary-3);
+  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+  }
+  
+  #svg {
+    height: 300px;
+    width: 300px;
+    stroke: var(--accent);
+    /* fill: var(--accent); */
+    /* fill-opacity: 0; */
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 4s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+      fill: var(--secoondary-2);
+      ;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      
+      fill: var(--primarry-1);
+    }
+  }
+  
+  .name-container {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .logo-name {
+    color: var(--accent);
+    font-size: 30px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
