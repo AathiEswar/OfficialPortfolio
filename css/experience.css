@@ -337,8 +337,11 @@ font-size: 23px;
   }
   
   #svg {
-    height: 300px;
-    width: 300px;
+   
+    aspect-ratio: 1/1;
+
+    min-width: 280px;
+    max-width: 25%;
     stroke: var(--accent);
     /* fill: var(--accent); */
     /* fill-opacity: 0; */
@@ -361,7 +364,7 @@ font-size: 23px;
   }
   
   .name-container {
-    height: 30px;
+    height: 40px;
     overflow: hidden;
   }
   
@@ -373,3 +376,8 @@ font-size: 23px;
     margin-left: 20px;
     font-weight: bolder;
   }
+
+.tag-svg{
+    min-width: 50px;
+    max-width: 200px;
+}
