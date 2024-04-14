@@ -70,14 +70,14 @@
 }
 .exp-holder:hover{
     /* border: 1px solid var(--as-white); */
-    border-radius: 3%;
+    border-radius: 5%;
 
    
 }
 
 .exp-holder:hover .exp-bg{
     background-size: 82% , 140%,210%;
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 .holder-1{
@@ -90,7 +90,7 @@
 }
 .holder-1 .exp-holder{
     aspect-ratio: 1/1;
-    background-color: var(--secoondary-2);
+    background-color: var(--primarry-1);
    
     width: 55%;
 }
@@ -110,7 +110,7 @@
 }
 .holder-2 .exp-holder{
     aspect-ratio: 1/1;
-    background-color: var(--secoondary-2);
+    background-color: var(--primarry-1);
    
     width: 40%;
 }
@@ -182,7 +182,14 @@ font-size: 30px;
 .exp-role{
     color: var(--as-grey);
 }
-
+.exp-tags{
+    transition : all .7s ease-out
+}
+.exp-tags:hover{
+    background-color: var(--as-white);
+    color: var(--primarry-1);
+    border: 1px solid var(--primarry-1);
+}
 
 
 @media screen and (max-width : 760px) {
