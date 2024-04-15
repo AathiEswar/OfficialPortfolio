@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --accent: #beee62;
+  --primarry-1: #0b090a;
+  --secoondary-1: #16181a;
+
+  --primarry-2: #242423;
+  --secoondary-2: #333533;
+
+  --primary-3: #131313;
+}
+/* html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto}.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-stopped{overflow:hidden}.lenis.lenis-scrolling iframe{pointer-events:none} */
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Hanken Grotesk";
+  font-weight: 600;
+
+  /* color: white; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.contact-page{
+    width: 100%;
+    background-color: var(--primarry-1);
+    height: 100dvh;
+}
