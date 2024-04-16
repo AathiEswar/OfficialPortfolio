@@ -86,6 +86,7 @@
   </div>
 
   <div class="wrapper">
+   
     <section class="header">
       <div class="navbar-container container">
         <div class="navbar-name" style="color: white;">
@@ -168,11 +169,13 @@
 
     <section class="about-me" id="about">
       <div class="about-me-text">
+        
         <p class="am-ques">Who am I?</p>
         <p class="am-ans">
           A passionate student and avid learner with a strong creative drive. I'm constantly seeking new knowledge and
           opportunities to grow, driven by my enthusiasm for learning.
         </p>
+        <div class="cursor-about"></div>
       </div>
       <div class="about-me-socials">
 
@@ -763,8 +766,9 @@
       </div>
     </section>
 
-    <section class="contact-page">
-      <div class="contact-form">
+    <section class="contact-page"> 
+      
+      <div class="contact-form" >
         <div class="form-container" style="display: flex;flex-direction: column; justify-content: space-evenly; height: 100%;">
           <div class="row">
               <h1 class="h1">Contact Form</h1>
@@ -796,7 +800,11 @@
                 </div>
               </div>
               <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
+                <div class="btn-lrg submit-btn">
+                  <p class="btn-text">
+                  Send Message
+                </p>
+              </div>
               </div>
           </div>
         </div>
@@ -810,15 +818,20 @@
           </p> -->
           <div class="address-details">
             <p>
-              Call 8072135754
+              
+              <i class="fa-solid fa-phone"></i> 8072135754
             </p>
             <p>
-              aathi28082003@gmail.com
+              <i class="fa-regular fa-envelope"></i> aathi28082003@gmail.com
             </p>
+            <div class="cursor">
+
+            </div>
           </div>
        
         </div>
         <div class="contact-socials">
+         
           <div class="c-social">
             <p>GitHub</p>
           </div>
@@ -834,9 +847,11 @@
           <div class="c-social">
             <p>Whatsapp</p>
           </div>
+          
         </div>
 
       </div>
+     
     </section>
  
     
@@ -845,6 +860,7 @@
     <script src="script.js"></script>
     <script src="scripts/tilt.js"></script>
     <script src="scripts/imageloader.js"></script>
+    <script src="scripts/cursor.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -866,6 +882,13 @@
       if (window.innerWidth >= 770) {
         const locomotiveScroll = new LocomotiveScroll();
       }
+
+      const cursor = document.querySelector(".cursor");
+
+      document.addEventListener("mousemove" , (e) =>{
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+         })
 
     </script>
 </body>

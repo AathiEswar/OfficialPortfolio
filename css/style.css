@@ -24,9 +24,12 @@
   /* color: white; */
 }
 
+
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 
 .wrapper {
   background-color: var(--primarry-1);
@@ -526,3 +529,5 @@ a {
     display: none;
   }
 }
+
+

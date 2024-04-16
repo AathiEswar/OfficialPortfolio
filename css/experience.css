@@ -64,7 +64,7 @@
 }
 .exp-holder{
     /* border: 1px solid var(--as-white); */
-    border-radius: 1%;
+    border-radius: 2%;
     cursor: pointer;
     transition: all 0.7s;   
 }
@@ -76,7 +76,7 @@
 }
 
 .exp-holder:hover .exp-bg{
-    background-size: 82% , 140%,210%;
+    background-size: 82% , 140%,250%;
     border-radius: 5%;
 }
 
@@ -129,7 +129,7 @@
     background-position: center center,center , right;
     background-size: 80% , 100%,200%;
 
-    border-radius: 1%;
+    border-radius: 2%;
     transition: all .7s;
 }
 .holder-1 .exp-holder:nth-child(1) .exp-bg{
