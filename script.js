@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
   if(window.innerWidth >=770){
     const lenis = new Lenis({
-      duration: 2,
+      duration: 3,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
       direction: "vertical",
       gestureDirection: "vertical",
