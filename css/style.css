@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 :root {
   --accent: #beee62;
   --primarry-1: #0b090a;
@@ -29,7 +29,59 @@
 ::-webkit-scrollbar {
   display: none;
 }
+.cursor-hero{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: var(--accent); */
+  transition: 0.1s;
+  /* transform: translate(-50% , -50%); */
+  pointer-events: none;
+  z-index: 3000;
 
+  scale: 6;
+  
+
+}
+
+.cursor-circle{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-text{
+  font-family: "Source Code Pro";
+ 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  animation: rotateText 7s linear infinite ;
+}
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
+
+.cursor-text span{
+  position: absolute;
+  left: 50%;
+  font-size: 2.5px;
+  transform-origin: 0 10px;
+  font-weight: 400;
+}
 
 .wrapper {
   background-color: var(--primarry-1);
@@ -63,7 +115,7 @@
 
 .header {
   /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   position: fixed;
   width: 100%;
   z-index: 300;
@@ -264,6 +316,7 @@ a {
 }
 
 .hero-page {
+  cursor: none;
   width: 100%;
   height: 100dvh;
   display: flex;

@@ -264,6 +264,9 @@ flex-direction: column;
   align-items: start;
   flex-wrap: wrap;
 }
+.am-2-card-holder:hover{
+  cursor: pointer;
+}
 
 .am-card1{
   display: flex;
@@ -421,7 +424,7 @@ color: rgb(217, 217, 217);  font-size: 18px;
     scale: 0;
   }
   
-  .about-me-text:hover p ~ .cursor-about{
+  .about-me-text:hover p + .cursor-about{
     scale: 7;
   }
   .about-me-text p{
