@@ -1,3 +1,4 @@
+
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove" , (e) =>{
@@ -35,3 +36,13 @@ text.innerHTML = text.innerText.split('').map(
   (char , i) => 
   `<span style="transform:rotate(${(i * 360) / textLong}deg)"> ${char} </span>`
 ).join('');
+
+
+if(screen.width < 768){
+  const cursorAll = document.querySelectorAll(".cursor-js");
+  console.log(cursorAll);
+  cursorAll.forEach(cursor => {
+    cursor.remove();
+  })
+ 
+}
