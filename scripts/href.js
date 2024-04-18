@@ -38,7 +38,7 @@ cSocial.forEach(social => {
         }
         else if(theSocial == "Whatsapp"){
             
-            window.location.href = 'https://wa.me/qr/VA5I5ZWWMWEXB1';
+            window.location.href = 'https://wa.me/8072135754';
         }
     })
     
