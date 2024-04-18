@@ -37,8 +37,8 @@
 
 
     <div class="intro-container">
-      <div style="display: flex; flex-direction: column;justify-content: center; align-items: center;">
-        Crafted with
+      <div style="display: flex; flex-direction: column;justify-content: center; align-items: center; font-size: 30px;">
+        Crafted only with
         <div class="" style="font-size: 20px;">
           <svg class="tag-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="90" height="90"
             viewBox="0 0 48 48">
@@ -181,8 +181,10 @@
         
         <p class="am-ques">Who am I?</p>
         <p class="am-ans">
-          A passionate student and avid learner with a strong creative drive. I'm constantly seeking new knowledge and
-          opportunities to grow, driven by my enthusiasm for learning.
+
+          Prefinal year student at Velammal Engineering College,
+          driven by a passion for learning and creativity,
+           constantly seeking new knowledge and growth opportunities.
         </p>
         <div class="cursor-about cursor-js"></div>
       </div>
@@ -473,7 +475,10 @@
               <p>
                 Website for e-waste disposal
               </p>
+              
+              
             </div>
+            
             <div class="project-hub">
               <a class="Btn" href="https://github.com/AathiEswar/EwasteDisposal-FrontEnd">
                 <div class="svgWrapper">
@@ -489,8 +494,13 @@
           <div class="project-ss" data-scroll data-scroll-speed="0.1">
 
           </div>
-
+          <div class="project-part">
+            <p style="font-weight: 600; color: white;">
+               . 3rd prize in Techventure Project Expo .
+            </p>
+          </div>
         </div>
+        
         <div class="project-holder project2" data-tilt data-tilt-reverse="true" data-tilt-max="3"
           data-tilt-speed="1000">
 
@@ -742,7 +752,7 @@
                 HOPPY MOBILITY
               </p>
               <p class="exp-role">
-                Design . Full-Stack . Food Delivery
+                In Progress . Full-Stack . Food Delivery
               </p>
             </div>
           </div>
@@ -775,7 +785,7 @@
       </div>
     </section>
 
-    <section class="contact-page"> 
+    <section class="contact-page" id="contact"> 
       
       <div class="contact-form" >
         <div class="form-container" style="display: flex;flex-direction: column; justify-content: space-evenly; height: 100%;">
@@ -887,6 +897,12 @@
       function smoothScroll(target) {
         const targetSection = document.querySelector(target);
         targetSection.scrollIntoView({ behavior: 'smooth' });
+      //   if (window.innerWidth >= 770) {
+      //     const menuButton = document.querySelector(".menu-btn")
+      //   setTimeout(()=> menuButton.click(), 300)
+      // }
+      
+    
       }
 
       if (window.innerWidth >= 770) {

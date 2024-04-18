@@ -107,6 +107,12 @@
 
 
 }
+.project-part{
+  position: absolute;
+  bottom: 2%;
+
+  margin: auto;
+}
 .project-info {
   position: absolute;
   top: 2%;

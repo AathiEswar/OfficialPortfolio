@@ -227,14 +227,29 @@ text-align: start;
  .am-ques{
   color: var(--accent);
   font-style: italic;
-  font-size: 30px;
+  font-size: 3vw  ;
+   
+  background: linear-gradient(
+    to right,
+    #beee62 20%,
+    #bdee628f 30%,
+    #bdee626f 70%,
+    #beee62 80%
+);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+background-size: 400% auto;
+animation: textShine 1.5s ease-in-out infinite ;
 
  }
 
  .am-ans{
   /* color: var(--secoondary-2); */
   color: rgb(207, 207, 207);
-  font-size: 50px;  
+  font-size: 3.5vw;  
   
 
  }
@@ -352,7 +367,7 @@ color: rgb(217, 217, 217);  font-size: 18px;
 
     margin-left: 2%;
     height: 100vh;
-    width: 80%;
+    width: 90%;
 
     display: flex;
     flex-direction: column;
@@ -367,7 +382,9 @@ color: rgb(217, 217, 217);  font-size: 18px;
     font-size: 30px;  
   
    }
-
+.am-ques{
+  font-size: 25px;
+}
    .am-card1{
     width: 100%;
    }

@@ -223,7 +223,21 @@
     font-size: 4.5vw;
     font-family: "Roboto";
     text-transform: uppercase;
-
+ 
+    background: linear-gradient(
+      to right,
+      #beee62 20%,
+      #bdee628f 30%,
+      #bdee626f 70%,
+      #beee62 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 400% auto;
+  animation: textShine 1.5s ease-in-out infinite ;
 
 }
 
@@ -245,6 +259,21 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+     
+    background: linear-gradient(
+      to right,
+      #beee62 20%,
+      #bdee628f 30%,
+      #bdee626f 70%,
+      #beee62 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 400% auto;
+  animation: textShine 2s ease-in-out infinite ;
 }
 
 .programings-skills h1{

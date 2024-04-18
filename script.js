@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         {
           opacity: 0,
 
-          x: 50,
+          y: 50,
         },
         {
           opacity: 1,
@@ -24,7 +24,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
           stagger: 0.02,
           scrollTrigger: {
             trigger: word,
-            start: "-30% center",
+            start: "-50% center",
+            end: "50% center",
+            scrub: true,
+            // markers: true,
+            toggleActions: "play play reverse reverse",
+          },
+        }
+      );
+      gsap.fromTo(
+        ".am-ques",
+        {
+          opacity: 0,
+          y: -100,
+          clipPath: "polygon(0 18%, 100% 16%, 100% 76%, 0 78%);"
+        },
+        {
+          clipPath: "polygon(0 18%, 100% 16%, 100% 76%, 0 78%);",
+          opacity: 1,
+          y: 0,
+          x: 0,
+          duration: 0.2,
+          stagger: 0.02,
+          scrollTrigger: {
+            trigger: word,
+            start: "-200% center",
             end: "50% center",
             scrub: true,
             // markers: true,
@@ -43,14 +67,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
         text.words,
         {
           opacity: 0.1,
+       
         },
         {
           opacity: 1,
           duration: 0.2,
+    
           stagger: 0.02,
           scrollTrigger: {
             trigger: word,
-            start: "-50% center",
+            start: "-200% center",
             end: "50% center",
             scrub: true,
             // markers: true,
