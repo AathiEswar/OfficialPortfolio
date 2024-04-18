@@ -260,6 +260,17 @@
     justify-content: space-evenly;
     align-items: center;
      
+
+}
+
+.programings-skills h1{
+
+    font-size: 4.5vw;
+    font-family: "Roboto";
+   
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
     background: linear-gradient(
       to right,
       #beee62 20%,
@@ -274,16 +285,6 @@
   text-fill-color: transparent;
   background-size: 400% auto;
   animation: textShine 2s ease-in-out infinite ;
-}
-
-.programings-skills h1{
-
-    font-size: 4.5vw;
-    font-family: "Roboto";
-   
-    text-transform: uppercase;
-    text-align: center;
-    width: 80%;
 
 }
 
