@@ -465,8 +465,7 @@
       </h1>
 
       <div class="project-wrapper">
-        <div class="project-holder project1" data-tilt data-tilt-reverse="true" data-tilt-max="3"
-          data-tilt-speed="1000">
+        <div class="project-holder project1" data-tilt data-tilt-reverse="true" data-tilt-max="3" data-tilt-speed="1000">
           <div class="project-info">
             <div class="p-info">
               <h3>
@@ -679,7 +678,7 @@
 
       <div class="exp-wrapper">
         <div class="holder-1">
-          <div class="exp-holder">
+          <div class="exp-holder" data-tilt data-tilt-reverse="true" data-tilt-max="4" data-tilt-speed="1000">
             <div class="exp-bg">
 
             </div>
@@ -704,7 +703,7 @@
 
             </div>
           </div>
-          <div class="exp-holder">
+          <div class="exp-holder"  data-tilt data-tilt-reverse="true" data-tilt-max="2" data-tilt-speed="1000">
             <div class="exp-bg">
 
             </div>
@@ -732,7 +731,7 @@
 
 
         <div class="holder-2">
-          <div class="exp-holder">
+          <div class="exp-holder"  data-tilt data-tilt-reverse="true" data-tilt-max="4" data-tilt-speed="1000">
             <div class="exp-bg">
 
             </div>
@@ -742,7 +741,7 @@
                   2024
                 </div>
                 <div class="exp-stack exp-tags ">
-                  MEFN Stack
+                  Flutter.Firebase
                 </div>
                 <div class="exp-stack exp-tags">
                   Intern
@@ -756,7 +755,7 @@
               </p>
             </div>
           </div>
-          <div class="exp-holder">
+          <div class="exp-holder"  data-tilt data-tilt-reverse="true" data-tilt-max="2" data-tilt-speed="1000">
             <div class="exp-bg">
 
             </div>
@@ -897,10 +896,10 @@
       function smoothScroll(target) {
         const targetSection = document.querySelector(target);
         targetSection.scrollIntoView({ behavior: 'smooth' });
-      //   if (window.innerWidth >= 770) {
-      //     const menuButton = document.querySelector(".menu-btn")
-      //   setTimeout(()=> menuButton.click(), 300)
-      // }
+        if (window.innerWidth < 770) {
+          const menuButton = document.querySelector(".menu-btn")
+        setTimeout(()=> menuButton.click(), 300)
+      }
       
     
       }

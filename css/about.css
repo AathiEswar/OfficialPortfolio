@@ -371,9 +371,8 @@ color: rgb(217, 217, 217);  font-size: 18px;
 
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
   align-items: start;
-  text-align: start;
 
   }
   .am-ans{

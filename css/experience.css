@@ -31,6 +31,7 @@
 }
 
 .experience-page{
+    margin-top: 15%;
     color:var(--as-white);
     width: 100%;
     min-height: 100dvh;
@@ -302,7 +303,7 @@ font-size: 23px;
 .exp-main-heading {
 
     font-size: 40px;
-    font-weight: 400;
+   
   }
     
 }
