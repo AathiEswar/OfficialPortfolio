@@ -13,11 +13,11 @@ cSocial.forEach(social => {
         }
         else if(theSocial == "Resume"){
             
-                var cvUrl = '../Aathi Resume 2024-pdf.pdf';
+                var cvUrl = '../Aathi Eswar Resume Official.pdf';
 
                 var downloadLink = document.createElement('a');
                 downloadLink.href = cvUrl;
-                downloadLink.download = 'Aathi Resume 2024-pdf.pdf';
+                downloadLink.download = 'Aathi Eswar Resume Official.pdf';
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
                 document.body.removeChild(downloadLink);
