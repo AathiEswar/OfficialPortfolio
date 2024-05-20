@@ -13,14 +13,14 @@ cSocial.forEach(social => {
         }
         else if(theSocial == "Resume"){
             
-                var cvUrl = '../Aathi Eswar Resume Official.pdf';
+                // var cvUrl = '../Aathi Eswar Resume Official.pdf';
 
-                var downloadLink = document.createElement('a');
-                downloadLink.href = cvUrl;
-                downloadLink.download = 'Aathi Eswar Resume Official.pdf';
-                document.body.appendChild(downloadLink);
-                downloadLink.click();
-                document.body.removeChild(downloadLink);
+                // var downloadLink = document.createElement('a');
+                // downloadLink.href = cvUrl;
+                // downloadLink.download = 'Aathi Eswar Resume Official.pdf';
+                // document.body.appendChild(downloadLink);
+                // downloadLink.click();
+                // document.body.removeChild(downloadLink);
             
         }
         else if(theSocial == "Whatsapp"){
