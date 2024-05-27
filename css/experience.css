@@ -142,13 +142,18 @@
 
 }
 .holder-2 .exp-holder:nth-child(1) .exp-bg{
-    background-image: url("/assets/cropped-HB-logo.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-alfredo-kayesse-18877738.jpg");
-
+    background-image: url("/assets/experience/mainpage .png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/pexels-alfredo-kayesse-18877738.jpg");
+    background-size: 35% , 100% ,200%;
 }
 .holder-2 .exp-holder:nth-child(2) .exp-bg{
     background-image: url("/assets/cropped-hoppymobility\ website.png"),linear-gradient(to bottom , rgba(0, 0, 0, 0.34) , rgba(0, 0, 0, 0.318) ),url("/assets/experience/mokhalad-musavi-ilEGYgpaB1k-unsplash.jpg");
-
     
+}
+
+.holder-2 .exp-holder:nth-child(1) .exp-bg:hover{
+    background-size: 40% , 140%,250%;
+    border-radius: 5%;
+
 }
 
 

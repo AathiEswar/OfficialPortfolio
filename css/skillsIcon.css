@@ -54,7 +54,7 @@
     display: grid;
     place-content: center;
     gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .skill-holder{
